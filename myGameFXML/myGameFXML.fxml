@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myGameFXML.mainController">
+   <children>
+      <BorderPane layoutX="98.0" layoutY="52.0" maxHeight="800.0" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+         <center>
+            <Pane id="gameField" fx:id="gameField" maxHeight="600.0" maxWidth="600.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fx:id="player" centerX="5.0" centerY="5.0" focusTraversable="true" layoutX="5.0" layoutY="5.0" onKeyPressed="#keyHandler" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Rectangle fx:id="r1" arcHeight="5.0" arcWidth="5.0" height="13.0" layoutY="86.0" onKeyPressed="#keyHandler" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+                  <Rectangle fx:id="r2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="13.0" layoutX="241.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+                  <Rectangle fx:id="r3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="96.0" layoutX="166.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Rectangle fx:id="r4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="96.0" layoutX="453.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" width="16.0" />
+                  <Rectangle fx:id="r5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="101.0" layoutX="301.0" layoutY="463.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
+                  <Circle fx:id="circle" cache="true" centerX="5.0" centerY="5.0" fill="DODGERBLUE" layoutX="20.0" layoutY="171.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" translateX="4.0" translateY="2.0" />
+                  <Circle fx:id="circle2" cache="true" centerX="5.0" centerY="5.0" fill="DODGERBLUE" layoutX="44.0" layoutY="483.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Rectangle fx:id="finishLine" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="83.0" layoutX="581.0" layoutY="514.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="17.0" />
+                  <Circle fx:id="coin3" cache="true" centerX="5.0" centerY="5.0" fill="#fbff1f" layoutX="308.0" layoutY="403.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="coin2" cache="true" centerX="5.0" centerY="5.0" fill="#fbff1f" layoutX="399.0" layoutY="277.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="coin" cache="true" centerX="5.0" centerY="5.0" fill="#fbff1f" layoutX="285.0" layoutY="183.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
